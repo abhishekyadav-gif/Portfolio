@@ -1,0 +1,44 @@
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+// back to top
+const topButton = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+});
+
+topButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// contac form
+
+const form = document.querySelector("form");
+form.addEventListener("btn", (e) => {
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+
+  if (name === "" || email === "") {
+    e.preventDefault();
+    alert("Please fill in all fields.");
+  }
+});
+
+//  theme switch
+
+const toggleSwitch = document.querySelector(".theme-switch");
+
+toggleSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
