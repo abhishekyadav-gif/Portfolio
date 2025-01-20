@@ -37,8 +37,6 @@ body.dark-mode {
   background-color: #f39c12;
   z-index: 100;
   cursor: pointer;
-
-
 }
 
 .theme-switch:hover {
