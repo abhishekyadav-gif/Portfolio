@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="port.css">
+  <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -25,9 +25,24 @@
   <div class="container">
     <h2 class="intro-text"></h2>
 
+    <div class="toggle">
+      <button onclick="" class="menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="#nav">Home</a></li>
+          <li><a href="#summry">About</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contactme">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="nav" id="nav">
       <ul>
-        <li><img src="images/Abhilogo.png" alt="" height="50px" class="rounded-pill "></li>
+
         <li><a href="#nav">Home</a></li>
         <li><a href="#summry">About</a></li>
         <li><a href="#projects">Project</a></li>
@@ -36,24 +51,27 @@
 
 
       </ul>
+
     </div>
     <button class="theme-switch">Mode</button>
 
     <main>
       <div class="main">
         <div class="pic">
-          <img src="images/pics.jpg" alt="" height="200px" class="rounded">
+          <img src="images/Abhi4.jpg" alt="" height="200px" class="rounded">
         </div>
         <div class="text">
-          <h4>I'M</h4>
+          <!-- <h4>I'M</h4> -->
           <h1>A b h i s h e k Y a d a v </h1>
-          <h2>Web Developer</h2>
-          <p>Skilled web developer with internship experience, specializing in PHP, cloud computing, and AI integration
-            to enhance user experience. Proficient in HTML, CSS, and JavaScript, with a strong focus on scalable
+          <h2> PHP Web Developer</h2>
+          <p>Skilled web developer with internship experience, specializing in PHP, cloud computing,MYSQL and AI
+            integration
+            to enhance user experience. Proficient in HTML, CSS, and JavaScript,Cloud with a strong focus on scalable
             solutions and a commitment to continuous learning.
 
           </p>
-          <a href="images/Abhishek Kr Yadav.pdf" download="Abhishek Kr Yadav.pdf" style="text-decoration: none;">
+          <a href="images/ABHISHEK KR YADAV  RESUME.pdf" download="Abhishek Kr Yadav.pdf"
+            style="text-decoration: none;">
             <div class="button">Dounload CV<span class="button-border"></span></div>
           </a>
           <div class="icon">
@@ -67,7 +85,6 @@
                   </svg><span>twitter</span>
                 </div>
             </a>
-
             <a href="https://www.linkedin.com/in/abhishekyadav8080/" style="text-decoration: none;">
               <div id="linkedin" class="social-btn flex-center">
                 <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -102,14 +119,11 @@
     <summary>
       <span>━━━━━━</span>
 
-      Dynamic and detail-oriented web developer with internship experience, specializing in PHP, cloud computing, and AI
-      integration. I possess a strong command of HTML, CSS, and JavaScript, enabling me to create engaging and
-      responsive web applications. My projects include a visually appealing portfolio website showcasing my skills, a
-      robust employee records management system utilizing PHP and MySQL, and a comprehensive e-commerce platform
-      featuring product management and payment integration.
-
-      With a passion for innovative solutions and a commitment to continuous learning, I am excited to contribute my
-      skills to impactful web development projects.
+      Dynamic PHP developer with internship experience, skilled in PHP, MySQL, cloud computing, Git, and GitHub.
+      Proficient in HTML, CSS, and JavaScript, I build scalable and responsive web applications. My projects include a
+      portfolio website, an employee records system, a student management system, and an Mail Server platform with
+      Real time notification. Passionate about problem-solving and continuous learning, I strive to create impactful
+      solutions.
     </summary>
 
   </div>
@@ -117,57 +131,45 @@
 
   <!-- Projects  -->
 
-  <div id="projects">
-    <h1 class="text-center mt-5 pt-5 ">Projects</h1>
-    <div class="projects">
+
+  <div class="projects">
+    <h1>Projects</h1>
+    <div class="card_main">
       <div class="cards">
-        <img src="images/Restourant.png" alt="">
-        <div class="text2">
-          <input type="button" name="" id="name" value="Resturent Website">
-          <p> Develope A fully fintional Resturent Website Where you Enjoay delecious Food Veg Or Nonveg Food</p>
-          <a href="https://github.com/abhishekyadav-gif/Restaurant-.git" style="text-decoration: none;"><button id="a"
-              class="btn btn-secondary">know more</button></a>
-        </div>
-      </div>
-      <div class="cards">
-        <img src="images/calc2.png" alt="">
-        <div class="text2">
-          <input type="button" name="" id="name" value="Calculator">
-          <p> Develop a Fully Funtional Calculator That Perform Simple Airthmatic Operations.</p>
-          <a href="https://github.com/abhishekyadav-gif/Calculator1.git"> <button class="btn btn-secondary"
-              style="margin: 1rem;">know
-              more</button></a>
-        </div>
-      </div>
-      <div class="cards">
-        <img src="images/Employees.png" alt="">
-        <div class="text2">
-          <input type="button" name="" id="name" value="Employees Records">
-          <p> Develop a Records of Employees using Object oriented Programmiing C++.</p>
-          <a href="https://github.com/abhishekyadav-gif/Employee_Records" style="text-decoration: none;"> <button
-              class="btn btn-secondary">know more</button></a>
-        </div>
-      </div>
-      <div class="cards">
-        <img src="images/calc.png" alt="">
-        <div class="text2">
-          <input type="button" name="" id="name" value="B M I Calculator">
-          <p>Develop a Body Mass Index Calculator With User friendly Interface</p>
-          <a href="https://github.com/abhishekyadav-gif/Employee_Records" style="text-decoration: none;"> <button
-              class="btn btn-secondary">know more</button></a>
-        </div>
-      </div>
-      <div class="cards" id="stm">
-        <img src="images/studentp.png" alt="">
-        <div class="text2">
-          <input type="button" name="" class="project_name" id="name" value="Student Management System">
-          <p>Develop Student Management System Projects with User friendly Interface</p>
-          <a href="#" style="text-decoration: none;"> <button class="btn btn-secondary">know more</button></a>
+        <div class="card">
+          <img src="images/Mailserver.png" alt="Mailserver Website">
+          <h2>Mail Server</h2>
+          <div class="buttons">
+            <a href="https://github.com/abhishekyadav-gif/Mail_Server.git" class="btn">Github</a>
+            <a href="#" class="btn">Live Demo</a>
+          </div>
         </div>
       </div>
 
+      <div class="card">
+        <img src="images/Restourant.png" alt="Restaurant Website">
+        <h2>Restaurant Website</h2>
+        <div class="buttons">
+          <a href="" class="btn">Github</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/Stdmgst.png" alt="Stdmgst">
+        <h2>Student Management System</h2>
+        <div class="buttons">
+          <a href="https://github.com/abhishekyadav-gif/Student-Managment-System.git" class="btn">Github</a>
+          <a href="#" class="btn">Live Demo</a>
+
+        </div>
+      </div>
     </div>
   </div>
+
+
+
+
+
   <!-- skill  -->
 
   <h1 id="skill">Skills</h1>
@@ -371,7 +373,7 @@
       <a href="https://www.youtube.com/@abhiyadav3924" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
       <a href="#" title="Instagram"> <i class="fa-brands fa-square-instagram"></i></a>
       <a href="#" title="Facebook"> <i class="fa-brands fa-facebook"></i></a>
-      <a href="https://x.com/Abhiyad93198676" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
 
       <div class="border"></div>
 
@@ -385,7 +387,7 @@
       <p> <a href="#nav">Home</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Security</a>
-        <a href="#summry">Aboout</a>
+        <a href="#summry">About</a>
         <a href="#projects">Projects</a>
       </p>
       </p>

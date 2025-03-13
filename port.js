@@ -42,3 +42,13 @@ const toggleSwitch = document.querySelector(".theme-switch");
 toggleSwitch.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".menu"); // Select the toggle button
+  const navContainer = document.querySelector(".nav-container"); // Select the nav container
+
+  // Add event listener for button click
+  menuBtn.addEventListener("click", function () {
+    navContainer.classList.toggle("active"); // Toggle the 'active' class on navbar
+  });
+});
