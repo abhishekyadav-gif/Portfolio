@@ -79,6 +79,7 @@ body.dark-mode {
 
 .theme-switch {
   position: fixed;
+  display:none;
   top: 20px;
   right: 20px;
   width: 10%;
