@@ -10,7 +10,11 @@
 body {
   background: #e9dcc9;
 }
-
+/* .main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
 .toggle {
   display: none;
   position: fixed;
@@ -78,6 +82,7 @@ body.dark-mode {
 }
 
 .theme-switch {
+  display: none;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -279,7 +284,7 @@ h1 {
   box-shadow: 0 4px 20px rgba(50, 50, 46, 0.889);
   border-radius: 1rem;
   width: 450px;
-  height: 500px;
+  height: 530px;
   border: none;
   /* height: 500px; */
   background: #d7c7b1;
@@ -614,8 +619,13 @@ button {
   padding-top: 20px;
   transition: transform 0.3s ease;
 }
+.content p {
+  width: 75%;
+}
 
 .content button {
+  margin-top: 10px;
+  width: 52%;
   background-color: rgb(267, 198, 44);
 }
 .content button:hover {
@@ -684,6 +694,7 @@ button {
 }
 
 .institute {
+  width: 100%;
   display: flex;
   flex-direction: row;
   padding: 2rem;
@@ -886,10 +897,18 @@ footer {
     padding: 5px;
   }
 
+  .button {
+    width: 90%;
+  }
   .name {
     font-size: 1rem;
     text-align: center;
     padding-left: 0;
+  }
+  .institute {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .menu {
@@ -949,13 +968,26 @@ footer {
     flex-direction: column;
     gap: 5px;
     width: 50%;
-    margin-left: 7rem;
+    margin-left: 5.5rem;
     background: transparent;
   }
-
+  .content p {
+    width: 100%;
+  }
+  .content button {
+    width: 93%;
+  }
   .skills {
     flex-direction: column;
     padding: 1rem;
+  }
+
+  .line {
+    height: 452px;
+    width: 2px;
+    background-color: #919095;
+    margin: 0 20px;
+    margin-top: 10px;
   }
 
   .skills .course {

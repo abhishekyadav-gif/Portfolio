@@ -52,3 +52,31 @@ document.addEventListener("DOMContentLoaded", function () {
     navContainer.classList.toggle("active"); // Toggle the 'active' class on navbar
   });
 });
+
+(<script src="https://cdn.emailjs.com/dist/email.min.js"></script>)(
+  function () {
+    emailjs.init("YztLEeinNAINnBUE7");
+  }
+)();
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_p54ayih", // SERVICE ID
+        "template_anrdqg2", // TEMPLATE ID
+        this
+      )
+      .then(
+        function () {
+          alert("Message sent successfully!");
+        },
+        function (error) {
+          alert("Failed to send message");
+          console.log(error);
+        }
+      );
+  });
