@@ -79,7 +79,7 @@ document
       )
       .then(
         function () {
-          alert("Message sent successfully!");
+          alert("Thank you for reaching out. I’ll connect with you soon. !");
         },
         function (error) {
           alert("Failed to send message");
