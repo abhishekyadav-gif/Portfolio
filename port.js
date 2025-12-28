@@ -7,6 +7,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// toggleSwitch
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("navMenu").classList.remove("active");
+  });
+});
+
 // back to top
 const topButton = document.querySelector(".back-to-top");
 
@@ -53,12 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-(<script src="https://cdn.emailjs.com/dist/email.min.js"></script>)(
-  function () {
-    emailjs.init("YztLEeinNAINnBUE7");
-  }
-)();
+// EmailJS init
+(function () {
+  emailjs.init("YztLEeinNAINnBUE7");
+})();
 
+// Form submit
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
